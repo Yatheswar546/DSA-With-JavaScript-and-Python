@@ -1,6 +1,3 @@
-# `01-Basics/README.md`
-
-````md
 # Basics
 
 ## What is DSA?
@@ -323,4 +320,3 @@ In this section, we covered:
 - Break and Continue
 
 These concepts form the foundation for learning Data Structures and Algorithms.
-````
