@@ -270,8 +270,7 @@ Skips the current iteration and moves to the next iteration.
 
 A year is considered a leap year if:
 
-:contentReference[oaicite:0]{index=0}
-
+(Y % 4 == 0 AND Y % 100 != 0) OR (Y % 400 == 0)
 ---
 
 ## Examples
