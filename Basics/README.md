@@ -26,24 +26,24 @@ DSA is one of the most important skills in Software Development.
 
 ---
 
-# Programming Fundamentals
+## Programming Fundamentals
 
 Before learning advanced DSA concepts, it is important to understand programming fundamentals.
 
 ---
 
-# 1. Variables
+### 1. Variables
 
 Variables are containers used to store data values.
 
-## JavaScript
+### JavaScript
 
 ```js
 let name = "Yathe";
 let age = 22;
 ```
 
-## Python
+### Python
 
 ```py
 name = "Yathe"
@@ -52,13 +52,13 @@ age = 22
 
 ---
 
-# 2. Syntax
+### 2. Syntax
 
 Every programming language follows a specific syntax.
 
 Although many programming languages are similar, each language has its own rules and structure.
 
-### Keywords
+#### Keywords
 
 Keywords are predefined reserved words that have special meanings.
 
@@ -71,11 +71,11 @@ Examples:
 
 ---
 
-# 3. Data Types
+### 3. Data Types
 
 Data types represent the classification of data.
 
-## Common Data Types
+#### Common Data Types
 
 | Data Type | Example |
 |-----------|----------|
@@ -87,7 +87,7 @@ Data types represent the classification of data.
 
 ---
 
-## Why Are Data Types Important?
+#### Why Are Data Types Important?
 
 Data types help in:
 - Better memory management
@@ -96,7 +96,7 @@ Data types help in:
 
 ---
 
-## Data Types vs Data Structures
+#### Data Types vs Data Structures
 
 | Data Types | Data Structures |
 |------------|----------------|
@@ -105,7 +105,7 @@ Data types help in:
 
 ---
 
-# 4. Constraints
+### 4. Constraints
 
 Constraints are restrictions or limitations given in a problem statement.
 
@@ -114,7 +114,7 @@ They help us:
 - Decide suitable data types
 - Optimize the solution
 
-## Example
+#### Example
 
 ```txt
 The array contains less than 10^6 elements
@@ -126,7 +126,7 @@ This tells us:
 
 ---
 
-# 5. Debugging
+### 5. Debugging
 
 Debugging is the process of:
 - Finding bugs/errors
@@ -136,15 +136,15 @@ It is one of the most important programming skills.
 
 ---
 
-# 6. Conditionals
+### 6. Conditionals
 
 Conditionals help in decision-making.
 
 ---
 
-## if-else Statement
+#### if-else Statement
 
-### JavaScript
+#### JavaScript
 
 ```js
 if(condition) {
@@ -154,7 +154,7 @@ if(condition) {
 }
 ```
 
-### Python
+#### Python
 
 ```py
 if condition:
@@ -165,9 +165,9 @@ else:
 
 ---
 
-## else-if Ladder
+### else-if Ladder
 
-### JavaScript
+#### JavaScript
 
 ```js
 if(condition1) {
@@ -179,7 +179,7 @@ if(condition1) {
 }
 ```
 
-### Python
+#### Python
 
 ```py
 if condition1:
@@ -192,15 +192,15 @@ else:
 
 ---
 
-# 7. Loops
+### 7. Loops
 
 Loops help in repeating a block of code multiple times.
 
 ---
 
-## for Loop
+#### for Loop
 
-### JavaScript
+#### JavaScript
 
 ```js
 for(let i = 0; i < 5; i++) {
@@ -208,7 +208,7 @@ for(let i = 0; i < 5; i++) {
 }
 ```
 
-### Python
+#### Python
 
 ```py
 for i in range(5):
@@ -217,9 +217,9 @@ for i in range(5):
 
 ---
 
-## while Loop
+#### while Loop
 
-### JavaScript
+#### JavaScript
 
 ```js
 let i = 0;
@@ -230,7 +230,7 @@ while(i < 5) {
 }
 ```
 
-### Python
+#### Python
 
 ```py
 i = 0
@@ -242,21 +242,21 @@ while i < 5:
 
 ---
 
-# 8. Break and Continue
+### 8. Break and Continue
 
-## Break
+#### Break
 
 Stops the loop completely.
 
 ---
 
-## Continue
+#### Continue
 
 Skips the current iteration and moves to the next iteration.
 
 ---
 
-# Problems Solved
+### Problems Solved
 
 | Problem | Concepts Used |
 |----------|----------------|
@@ -285,7 +285,7 @@ A year is considered a leap year if:
 
 ---
 
-# Interview Notes
+## Interview Notes
 
 - Master programming fundamentals before jumping into advanced DSA.
 - Most interview problems rely heavily on loops and conditionals.
@@ -294,7 +294,7 @@ A year is considered a leap year if:
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 - Infinite loops
 - Incorrect conditions
@@ -304,7 +304,7 @@ A year is considered a leap year if:
 
 ---
 
-# Summary
+## Summary
 
 In this section, we covered:
 
