@@ -68,3 +68,7 @@ def rightRotate(arr, k):
 
 print("Left Rotation: ", leftRotate(arr.copy(), k))
 print("Right Rotation: ", rightRotate(arr.copy(), k))
+
+# For both cases:
+#     Time Complexity - O(n)
+#     Space Complexity - O(1)
