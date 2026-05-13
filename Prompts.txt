@@ -1,0 +1,339 @@
+Good gp, Now let's move to next concept "Arrays in JavaScript". Below is the notes I written
+
+---------------------------------------------------------------------------------------
+notes.txt
+
+Collections:
+
+=> Collection refers to a grouping or container that holds multiple items or elements together. 
+=> Collections encompass various data structures or objects that allow for the storage, retrieval, and manipulation of multiple items.
+=> Arrays, Objects, Map, Set, and other built-in structures can be considered collections.
+
+=====================================================================================================
+
+Arrays in JavaScript:
+
+What?
+=> Store items (generally, similar type) in contiguous memory location
+Concept 
+
+Why?
+=> Think: How would you calculate the sum of 100 integers? Use 100 different variables? What is the issue here?
+
+Index
+=> Index value represent the position of an element in an array
+=> Indexing starts from 0 and goes uptill (size of array - 1)
+=> To visit all elements of the array, we can through the index in the range [0, size - 1]
+
+=====================================================================================================
+
+Array Methods - Recap:
+
+shift()
+unshift()
+push()
+pop()
+
+[Generate a simple image which shows the above four operations on an array]
+
+=====================================================================================================
+
+Array - Basic Operations:
+
+Rotation
+=> Left rotate: Shift all the elements one place to the left
+=> Right rotate: Shift all the elements one place to the right
+
+Reversing
+=> Changing the order of the elements in an array, first goes into last while the last comes to the first. Likewise swap(second, second last) and so on
+
+Sorting
+=> Way to order elements, either in ascending or descending (using inbuilt methods)
+
+=====================================================================================================
+
+Sorting - Recap:
+
+=> sort() tries to convert the array elements to strings first and sorts lexicographically (dictionary order).
+=> Customise how sort() is done with a comparator function. The comparator functions takes in two arguments to compare (say a and b) 
+        --> If the function returns -ve number then that means to sort a before b
+        --> If the function returns a +ve number that means to sort b before a
+        --> If the function returns 0 then it means to keep the original ordering of a and b
+
+Example: 
+nums.sort(function (a, b) {
+    if (a < b) return -1; // or any negative value
+    else if (a > b) return 1; // or any positive value
+    else return 0;
+})
+
+=====================================================================================================
+
+---------------------------------------------------------------------------------------
+
+
+As you can see the above notes in on "Arrays in JavaScript". But you are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
+Analyze the present notes and what are the topics present in the notes and add more information on those topics in both Python and JavaScript.
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Problems used for this topic.
+
+Problem 1: Find Element 
+Problem Description
+Given an array of n elements and an integer x, find the index where x is present in the array. If there are multiple occurrences, find the leftmost one. If x is not present, return -1.
+
+Input format
+There are three lines of input.
+
+First line contains integer n.
+
+Second line contains n space separated integers representing the array.
+
+Third line contains the value of x.
+
+Output format
+An integer representing the index of x in the array.
+
+Sample Input 1
+5
+
+1 3 4 2 1
+
+1
+
+Sample Output 1
+0
+
+Explanation 1
+1 is present at 0 and 4 indexes and the leftmost index is 0.
+
+Constraints
+1 <= n <= 100000
+
+0 <= x <= 10^9
+
+=========================================
+
+Problem 2: Left Rotation 
+
+Problem Description
+You are given a array of numbers. Your task is to rotate the given array left(anti-clockwise) by 1 units from the starting index. You are required to return the rotated array.
+
+Input format
+First line contains an integer n, the size of the array. Second line contains n integers, the elements of the array.
+
+Output format
+Return the rotated string.
+
+Sample Input 1
+1 2 3 4 5
+
+Sample Output 1
+2 3 4 5 1
+
+Explanation
+In the left rotation, the subarray of length 1 from the beginning is [1], this subarray is removed from the beginning and attached to the end of the array(i.e. anti-clockwise).
+
+Constraints
+1 <= n <= 10^5 1 <= arr[i] <= 10^5
+
+=========================================
+
+Problem 3: Sort Array 
+
+Problem Description
+Given an array of n strings. Sort the array in lexicographical order.
+
+Input format
+First line contains integer n.
+
+Next line contains n space separated strings.
+
+Output format
+Print the sorted array.
+
+Sample Input 1
+4
+
+abc abd ab a
+
+Sample Output 1
+a ab abc abd
+
+Explanation
+The given array is sorted in lexicographical order.
+
+Constraints
+1 <= n <= 10000
+
+Strings contain only lowercase english alphabet.
+
+Each string will have length no more than 15.
+
+=========================================
+
+Problem 4: Find Local Peak 
+
+Problem Description
+Write a program to find the peaks in the sequence.
+
+An element is a peak element if it is greater than its neighbors (a[i] > a[i-1] AND a[i] > a[i+1]).
+
+For the leftmost element, only check the element to the right of it (a[0] > a[1]). Similarly, for the rightmost element, only check the element to the left of it (a[n-1] > a[n-2]).
+
+Below is an example, Input: Arr[] = [10,5,6,3,4,8,9,15] Output: [10,6,15]
+
+Input format
+First line contains an integer N the number of integers int the input array
+
+Second line contains the integers in the array
+
+Output format
+Return an array containing all the local peak elements
+
+Sample Input 1
+7
+
+4 2 3 1 5 6 4
+
+Sample Output 1
+4 3 6
+
+Explanation
+Here, 4 is a local peak as 4 > 2 and there is no integer left of 4
+
+3 is a local peak as 3 > 2 and 3 > 1
+
+6 is a local peak as 6 > 5 and 6 > 4
+
+Constraints
+1 <= N <= 10^5
+
+1 <= arr[i] <= 10^9
+
+=========================================
+
+Problem 5: Extract Numbers
+
+Problem Description
+Implement the function extractNumbers() that
+
+Accepts two arguments a number N and an array arr containing a mix of strings and numbers (in string type)
+
+Returns a new array that retains only the numbers present in the original array in the same order.
+
+Example: from the provided array arr = [a, 1, b, 2, c, d, 3, 4, e], the output array should contain [1, 2, 3, 4]. The numbers in the original array can be single or multiple digits, and there may be strings interspersed among them.
+
+Note
+The numbers in the array are also of string type.
+
+The order of integers in the input array must be maintained.
+
+Input format
+First line is an integer N: the number of elements in the input array Second line is arr: the elements of the input array
+
+Output format
+Return the expected integer array.
+
+Sample Input 1
+8
+
+a 3 long 17 crio dsa 100 20
+
+Sample Output 1
+3 17 100 20
+
+Explanation
+The input array contains four integers [3, 17, 100, 20]
+
+Constraints
+1 <= N <= 10^5
+
+1 <= |arr[i]| <= 8 where |arr[i]| is the length of the string
+
+=========================================
+
+Problem 6: Find Minimum and Maximum Element of an Array
+
+Problem Description
+Given an array of integers, write a program to find the sum of the minimum and maximum values of the array.
+
+Input format
+First line contains an integer N, the size of the array
+
+Second line contains the integers present in the array
+
+Output format
+Return expected integer
+
+Sample Input 1
+5
+
+10 15 4 5 19
+
+Sample Output 1
+23
+
+Explanation
+The minimum and maximum values of the array are 4 and 19 respectively, totaling 23
+
+Sample Input 2
+3
+
+10 10 10
+
+Sample Output 2
+20
+
+Explanation
+The minimum and maximum values of the array are the same, i.e, 10, totaling 20
+
+Constraints
+1 <= N <= 10^5
+
+1 <= arr[i] <= 10^9
+
+=========================================
+
+Problem 7: Find Simple Interest 
+
+Problem Description
+Write a program to calculate the simple interest based on the given principal amount, rate of interest, and time period.
+
+The formula to calculate simple interest is as follows:
+
+Simple Interest = (Principal × Rate × Time) / 100
+
+​
+
+Input format
+The input consists of three space-separated integers on a single line:
+
+P (Principal amount)
+
+R (Rate of interest)
+
+T (Time period in years)
+
+Output format
+The program should output a single floating-point number representing the calculated simple interest, rounded to two decimal places.
+
+Sample Input 1
+1000 5 2
+
+Sample Output 1
+100.00
+
+Explanation
+For a principal amount of 1000, a rate of interest of 5%, and a time period of 2 years, the simple interest is calculated as follows:
+
+Simple Interest = (1000×5×2)/100 = 100.00
+
+Constraints
+1 ≤ P ≤ 10^5
+
+1 ≤ R,T ≤ 100
