@@ -48,7 +48,7 @@ function findLocalPeak(arr) {
         resultArray.push(arr[0])
     }
 
-    for(let i=1; i<n-1; i++) {
+    for(let i=1; i<n-2; i++) {
         if((arr[i] > arr[i-1]) &&(arr[i] > arr[i+1])) {
             resultArray.push(arr[i]);
         }
