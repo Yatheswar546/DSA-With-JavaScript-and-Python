@@ -37,11 +37,11 @@ function findElement(arr, k) {
     for(let i=0; i<arr.length; i++) {
 
         if(arr[i] == k) {
-            return true;
+            return i;
         }
     }
 
-    return false;
+    return -1;
 
 }
 
