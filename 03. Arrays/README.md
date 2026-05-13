@@ -146,7 +146,7 @@ The following are some commonly used array operations.
 
 ---
 
-### Array Operations Visualization
+## Array Operations Visualization
 
 ![Array Operations](./array-operations.png)
 
@@ -352,7 +352,7 @@ Sorting means arranging elements in:
 
 ---
 
-#### Sorting in JavaScript
+### Sorting in JavaScript
 
 JavaScript `sort()` converts elements into strings and sorts lexicographically by default.
 
