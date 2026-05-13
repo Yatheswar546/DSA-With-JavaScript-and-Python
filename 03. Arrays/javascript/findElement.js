@@ -44,3 +44,5 @@ function findElement(arr, k) {
     return false;
 
 }
+
+// Time Complexity - O(n)
