@@ -36,3 +36,24 @@
 
 # 1 <= arr[i] <= 10^9
 
+n = int(input("Enter Array Size: "))
+arr = list(map(int, input("Enter Array Elements: ").split()))
+
+resultArr = []
+
+if(arr[0] > arr[1]):
+    resultArr.append(arr[0])
+
+for i in range(1, n-1):
+    if(arr[i] > arr[i-1] and arr[i] > arr[i+1]):
+        resultArr.append(arr[i])
+
+if(arr[n-1] > arr[n-2]):
+    resultArr.append(arr[n-1])
+
+print(resultArr);
+
+# Time Complexity - O(n)
+# Space Complexity :
+#     Average - O(k)
+#     Worst   - O(n)
