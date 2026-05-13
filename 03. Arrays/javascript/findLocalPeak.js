@@ -3,7 +3,8 @@
 
 // An element is a peak element if it is greater than its neighbors (a[i] > a[i-1] AND a[i] > a[i+1]).
 
-// For the leftmost element, only check the element to the right of it (a[0] > a[1]). Similarly, for the rightmost element, only check the element to the left of it (a[n-1] > a[n-2]).
+// For the leftmost element, only check the element to the right of it (a[0] > a[1]). 
+// Similarly, for the rightmost element, only check the element to the left of it (a[n-1] > a[n-2]).
 
 // Below is an example, Input: Arr[] = [10,5,6,3,4,8,9,15] Output: [10,6,15]
 
@@ -60,3 +61,10 @@ function findLocalPeak(arr) {
     return resultArray;
 
 }
+
+/* 
+    Time Complexity - O(n)
+    Space Complexity :
+        Average - O(k)
+        Worst   - O(n)
+*/
