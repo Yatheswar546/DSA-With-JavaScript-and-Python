@@ -22,7 +22,7 @@ Both JavaScript and Python provide built-in collections.
 
 ---
 
-# Arrays
+## Arrays
 
 An Array is a collection used to store multiple values in a single variable.
 
@@ -30,7 +30,7 @@ Arrays are one of the most important and commonly used data structures in DSA.
 
 ---
 
-## Why Arrays?
+### Why Arrays?
 
 Imagine storing marks of 100 students.
 
@@ -43,7 +43,7 @@ Arrays solve this problem by storing multiple values together.
 
 ---
 
-## Characteristics of Arrays
+### Characteristics of Arrays
 
 - Stores multiple elements
 - Elements are accessed using indexes
@@ -53,7 +53,7 @@ Arrays solve this problem by storing multiple values together.
 
 ---
 
-# Array Declaration
+## Array Declaration
 
 ### JavaScript
 
@@ -69,13 +69,13 @@ nums = [10, 20, 30, 40]
 
 ---
 
-# Indexing
+## Indexing
 
 Index represents the position of an element in the array.
 
 ---
 
-## Example
+### Example
 
 | Index | Value |
 |------|------|
@@ -106,13 +106,13 @@ print(nums[0])
 
 ---
 
-# Traversing an Array
+## Traversing an Array
 
 Traversal means visiting all elements of an array one by one.
 
 ---
 
-## JavaScript
+### JavaScript
 
 ```js
 let nums = [10, 20, 30, 40];
@@ -124,7 +124,7 @@ for(let i = 0; i < nums.length; i++) {
 
 ---
 
-## Python
+### Python
 
 ```py
 nums = [10, 20, 30, 40]
@@ -135,7 +135,7 @@ for i in range(len(nums)):
 
 ---
 
-# Array Methods Recap
+## Array Methods Recap
 
 The following are some commonly used array operations.
 
@@ -146,17 +146,17 @@ The following are some commonly used array operations.
 
 ---
 
-# Array Operations Visualization
+### Array Operations Visualization
 
 ![Array Operations](./array-operations.png)
 
 ---
 
-# push()
+### push()
 
 Adds an element to the end of the array.
 
-### JavaScript
+#### JavaScript
 
 ```js
 let nums = [10, 20];
@@ -166,7 +166,7 @@ nums.push(30);
 console.log(nums);
 ```
 
-### Python
+#### Python
 
 ```py
 nums = [10, 20]
@@ -178,11 +178,11 @@ print(nums)
 
 ---
 
-# pop()
+### pop()
 
 Removes the last element from the array.
 
-### JavaScript
+#### JavaScript
 
 ```js
 let nums = [10, 20, 30];
@@ -192,7 +192,7 @@ nums.pop();
 console.log(nums);
 ```
 
-### Python
+#### Python
 
 ```py
 nums = [10, 20, 30]
@@ -204,11 +204,11 @@ print(nums)
 
 ---
 
-# shift()
+### shift()
 
 Removes the first element from the array.
 
-### JavaScript
+#### JavaScript
 
 ```js
 let nums = [10, 20, 30];
@@ -218,7 +218,7 @@ nums.shift();
 console.log(nums);
 ```
 
-### Python
+#### Python
 
 ```py
 nums = [10, 20, 30]
@@ -230,11 +230,11 @@ print(nums)
 
 ---
 
-# unshift()
+### unshift()
 
 Adds an element to the beginning of the array.
 
-### JavaScript
+#### JavaScript
 
 ```js
 let nums = [20, 30];
@@ -244,7 +244,7 @@ nums.unshift(10);
 console.log(nums);
 ```
 
-### Python
+#### Python
 
 ```py
 nums = [20, 30]
@@ -256,17 +256,17 @@ print(nums)
 
 ---
 
-# Basic Array Operations
+## Basic Array Operations
 
 ---
 
-## Rotation
+### Rotation
 
 Rotation means shifting array elements either left or right.
 
 ---
 
-### Left Rotation
+#### Left Rotation
 
 Shift all elements one position to the left.
 
@@ -284,7 +284,7 @@ After left rotation:
 
 ---
 
-### Right Rotation
+#### Right Rotation
 
 Shift all elements one position to the right.
 
@@ -302,7 +302,7 @@ After right rotation:
 
 ---
 
-# Reversing an Array
+### Reversing an Array
 
 Reversing means changing the order of elements.
 
@@ -320,7 +320,7 @@ After reversing:
 
 ---
 
-## JavaScript
+#### JavaScript
 
 ```js
 let nums = [1, 2, 3, 4];
@@ -332,7 +332,7 @@ console.log(nums);
 
 ---
 
-## Python
+#### Python
 
 ```py
 nums = [1, 2, 3, 4]
@@ -344,7 +344,7 @@ print(nums)
 
 ---
 
-# Sorting Arrays
+### Sorting Arrays
 
 Sorting means arranging elements in:
 - Ascending order
@@ -352,15 +352,15 @@ Sorting means arranging elements in:
 
 ---
 
-# Sorting in JavaScript
+#### Sorting in JavaScript
 
 JavaScript `sort()` converts elements into strings and sorts lexicographically by default.
 
 ---
 
-## Problem Example
+#### Problem Example
 
-### JavaScript
+#### JavaScript
 
 ```js
 let nums = [1, 100, 20, 3];
@@ -380,13 +380,13 @@ This happens because sorting is done lexicographically.
 
 ---
 
-# Comparator Function
+### Comparator Function
 
 A comparator function controls how sorting is performed.
 
 ---
 
-## Rules of Comparator Function
+#### Rules of Comparator Function
 
 - Negative value → sort `a` before `b`
 - Positive value → sort `b` before `a`
@@ -394,9 +394,9 @@ A comparator function controls how sorting is performed.
 
 ---
 
-## Ascending Order Sort
+### Ascending Order Sort
 
-### JavaScript
+#### JavaScript
 
 ```js
 let nums = [1, 100, 20, 3];
@@ -410,9 +410,9 @@ console.log(nums);
 
 ---
 
-## Descending Order Sort
+### Descending Order Sort
 
-### JavaScript
+#### JavaScript
 
 ```js
 let nums = [1, 100, 20, 3];
@@ -426,13 +426,13 @@ console.log(nums);
 
 ---
 
-# Sorting in Python
+## Sorting in Python
 
 Python sorting works numerically by default.
 
 ---
 
-## Ascending Order
+### Ascending Order
 
 ```py
 nums = [1, 100, 20, 3]
@@ -444,7 +444,7 @@ print(nums)
 
 ---
 
-## Descending Order
+### Descending Order
 
 ```py
 nums = [1, 100, 20, 3]
@@ -456,7 +456,7 @@ print(nums)
 
 ---
 
-# Time Complexity of Common Array Operations
+## Time Complexity of Common Array Operations
 
 | Operation | Time Complexity |
 |-----------|----------------|
@@ -470,7 +470,7 @@ print(nums)
 
 ---
 
-# Problems Solved Using Arrays
+## Problems Solved Using Arrays
 
 - Find maximum/minimum element
 - Reverse an array
@@ -482,7 +482,7 @@ print(nums)
 
 ---
 
-# Interview Notes
+## Interview Notes
 
 - Arrays are one of the most frequently asked DSA topics.
 - Most problems involve traversal and indexing.
@@ -492,7 +492,7 @@ print(nums)
 
 ---
 
-# Common Beginner Mistakes
+## Common Beginner Mistakes
 
 - Accessing invalid indexes
 - Forgetting array size boundaries
@@ -502,7 +502,7 @@ print(nums)
 
 ---
 
-# Summary
+## Summary
 
 In this section, we covered:
 
