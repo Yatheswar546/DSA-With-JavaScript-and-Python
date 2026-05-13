@@ -40,10 +40,27 @@ function extractNumbers(arr, n) {
 
     let resultArray = [];
 
-    for(let i=0; i<n; i++) {
-        
-        if(Number.isInteger(arr[i])) {
-            resultArray.push(arr[i]);
+    for(let str of arr) {
+        let flag = true;
+
+        for(let i=0; i<str.length; i++) {
+
+            if(str[i] === '-') {
+                
+                if(i!=0 || str.length===1) {
+                    flag = false;
+                    break;
+                }
+            }
+            else if(str[i] < '0' || str[i] > '9') {
+                flag = false;
+                break
+            }
+
+        }
+
+        if(flag) {
+            resultArray.push(str);
         }
 
     }
@@ -51,3 +68,8 @@ function extractNumbers(arr, n) {
     return resultArray;
 
 }
+
+/*
+    Time Complexity - O(n*k) [array length * max. string length]
+    Space Complexity - O(m) [less than array size] 
+*/
