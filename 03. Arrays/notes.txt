@@ -1,0 +1,66 @@
+Collections:
+
+=> Collection refers to a grouping or container that holds multiple items or elements together. 
+=> Collections encompass various data structures or objects that allow for the storage, retrieval, and manipulation of multiple items.
+=> Arrays, Objects, Map, Set, and other built-in structures can be considered collections.
+
+=====================================================================================================
+
+Arrays in JavaScript:
+
+What?
+=> Store items (generally, similar type) in contiguous memory location
+Concept 
+
+Why?
+=> Think: How would you calculate the sum of 100 integers? Use 100 different variables? What is the issue here?
+
+Index
+=> Index value represent the position of an element in an array
+=> Indexing starts from 0 and goes uptill (size of array - 1)
+=> To visit all elements of the array, we can through the index in the range [0, size - 1]
+
+=====================================================================================================
+
+Array Methods - Recap:
+
+shift()
+unshift()
+push()
+pop()
+
+[Generate a simple image which shows the above four operations on an array]
+
+=====================================================================================================
+
+Array - Basic Operations:
+
+Rotation
+=> Left rotate: Shift all the elements one place to the left
+=> Right rotate: Shift all the elements one place to the right
+
+Reversing
+=> Changing the order of the elements in an array, first goes into last while the last comes to the first. Likewise swap(second, second last) and so on
+
+Sorting
+=> Way to order elements, either in ascending or descending (using inbuilt methods)
+
+=====================================================================================================
+
+Sorting - Recap:
+
+=> sort() tries to convert the array elements to strings first and sorts lexicographically (dictionary order).
+=> Customise how sort() is done with a comparator function. The comparator functions takes in two arguments to compare (say a and b) 
+        --> If the function returns -ve number then that means to sort a before b
+        --> If the function returns a +ve number that means to sort b before a
+        --> If the function returns 0 then it means to keep the original ordering of a and b
+
+Example: 
+nums.sort(function (a, b) {
+    if (a < b) return -1; // or any negative value
+    else if (a > b) return 1; // or any positive value
+    else return 0;
+})
+
+=====================================================================================================
+
