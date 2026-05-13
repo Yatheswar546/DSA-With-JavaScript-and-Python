@@ -75,7 +75,7 @@ nums.sort(function (a, b) {
 As you can see the above notes in on "Arrays in JavaScript". But you are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
 Analyze the present notes and what are the topics present in the notes and add more information on those topics in both Python and JavaScript.
 
-
+Create a README file on this topic that meet our primary goals
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
