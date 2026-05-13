@@ -36,3 +36,7 @@ function sortArray(arr) {
     return arr;
 
 }
+
+/*
+    Time Complexity - O(n^2) || O(nlogn)
+*/
