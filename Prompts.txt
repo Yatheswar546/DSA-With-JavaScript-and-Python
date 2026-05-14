@@ -126,38 +126,18 @@ Interview Problems:
 
 -------------------------------------------------------------------------------------------
 
-Common Terminologies:
+As you can see the above notes in on "Two Pointers". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
+But as this is just an algorithm not a particular topic.
+So create a README file with these points: 
+=> Explain about this topic easily.
+=> How to implement in JavaScript and Python.
+=> Any easy tricks on when to use Two Pointers.
+=> Most commonly used scenarios 
+=> Most commonly asked interview problems on Two Pointers.
 
-Substring vs Subsequence
-    --> Substring: Continuous part of string, take out characters from a string placed b/w two indices in a continuous order
-    --> Subsequence: Remove zero or more characters b/w two indices, without changing the order of the remaining elements.
-    --> Examples: “thequickbrownfox” - substring: “quick”   - subsequence: “qck”
+The README file should meet our primary goals. and also include icons as you did for previous README file
 
-Prefix vs Suffix
-    --> Prefix: substring that occurs at the beginning of the string
-    --> Suffix: substring that occurs at the end of the string
-
-Mutable vs Immutable
-=> Strings are immutable in JavaScript
-    --> Mutable: object value can be changed after initialization
-    --> Immutable: object value cannot be changed after initialization
-
--------------------------------------------------------------------------------------------
-
-Common String Operations:
-
-Reversing a string
-Check if strings are identical
-Sorting 
-Concatenation
-Count characters 
-Removing characters
-Printing substrings/subsequences
-
--------------------------------------------------------------------------------------------
-
-
-As you can see the above notes in on "Strings". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
+As you can see the above notes in on "Two Pointers". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
 Analyze the present notes and what are the topics present in the notes and 
 Create a README file and add more information on those topics in both Python and JavaScript.
 Add more Strings Operations in Python and JavaScript separately.

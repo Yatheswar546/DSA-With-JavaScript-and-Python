@@ -213,6 +213,8 @@ print("".join(arr))
 
 ### 🔹 Substring vs Subsequence
 
+![Substring vs Subsequence](./substring-vs-subsequence.png)
+
 ### ✅ Substring
 
 A continuous part of a string.
@@ -256,6 +258,28 @@ String: "thequickbrownfox"
 
 Subsequence: "qck"
 ```
+
+Example:
+
+```txt
+String: abcd
+
+Subsequences: 
+
+length 1 : a, b, c, d
+length 2 : ab, bc, cd, ac, ad, bd
+length 3 : abc, bcd, acd, abd
+length 4 : abcd
+
+Total no. of subsequences = 16
+```
+
+### NOTE: Total no. of subsequences = 2^n
+
+---
+
+## NOTE: Every Substring is a part of Subsequence 
+![Subsequence and Substring Relation](./substring-subsequence-relation.png)
 
 ---
 
