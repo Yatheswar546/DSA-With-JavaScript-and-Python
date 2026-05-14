@@ -33,3 +33,6 @@ for word in stringArr:
     res = res + " " + newWord;
     
 print(res);
+
+# Time Complexity : O(n)
+# Space Complexity: (n)
