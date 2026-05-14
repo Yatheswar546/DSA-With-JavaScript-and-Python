@@ -355,7 +355,8 @@ def is_palindrome(str):
 
 ### Beginner Level
 
-- Check Palindrome
+- Check Palindrome      - Leetcode #9
+- Valid Palindrome      - Leetcode #125
 - Reverse Array
 - Reverse String
 - Two Sum Sorted Array
