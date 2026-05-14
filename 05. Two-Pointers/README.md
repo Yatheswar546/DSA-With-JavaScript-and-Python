@@ -355,10 +355,10 @@ def is_palindrome(str):
 
 ### Beginner Level
 
-- Check Palindrome      - Leetcode #9
-- Valid Palindrome      - Leetcode #125
+- Check Palindrome      - Leetcode # 9
+- Valid Palindrome      - Leetcode # 125
 - Reverse Array
-- Reverse String
+- Reverse String        - Leetcode # 344
 - Two Sum Sorted Array
 - Move Zeroes
 
