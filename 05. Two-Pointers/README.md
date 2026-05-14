@@ -359,7 +359,8 @@ def is_palindrome(str):
 - Valid Palindrome      - Leetcode # 125
 - Reverse Array
 - Reverse String        - Leetcode # 344
-- Two Sum Sorted Array
+- Reverse String II     - Leetcode # 541
+- Two Sum Sorted Array  - Leetcode # 
 - Move Zeroes
 
 ---
