@@ -34,3 +34,25 @@
 // Constraints
 // 1 <= s.length <= 2 * 10^5
 
+function checkPalindrome(str) {
+
+    let leftPtr = 0;
+    let rightPtr = str.length-1;
+
+    while(leftPtr < rightPtr) {
+        if(str[leftPtr] != str[rightPtr]) {
+            return false 
+        }
+
+        leftPtr++;
+        rightPtr--;
+    }
+
+    return true
+
+}
+
+/* 
+    Time Complexity  : O(n)
+    Space Complexity : O(1)
+*/
