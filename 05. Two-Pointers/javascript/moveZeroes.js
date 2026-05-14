@@ -1,8 +1,9 @@
+// Leetcode - Problem 283
+
 // Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 // Note that you must do this in-place without making a copy of the array.
 
- 
 
 // Example 1:
 
@@ -18,6 +19,9 @@
 
 // 1 <= nums.length <= 104
 // -231 <= nums[i] <= 231 - 1
+
+
+// 1st approach
 
 var moveZeroes = function(nums) {
     
@@ -36,10 +40,43 @@ var moveZeroes = function(nums) {
         else if(nums[firstPtr]==0 && nums[secondPtr]==0) {
             secondPtr++;    
         }
+        else if(nums[firstPtr]!=0 && nums[secondPtr]==0) {
+            firstPtr++;
+            secondPtr++;
+        }
+        else {
+            firstPtr++;
+            secondPtr++;
+        }
     }
     
     return nums;
+
+};
+
+/*
+    Time Complexity  : O(n)
+    Space Complexity : O(1)
+*/
+
+// 2nd approach 
+
+var moveZeroes = function(nums) {
     
+    let firstPtr = 0;
+
+    for(let secondPtr=0; secondPtr < nums.length; secondPtr++) {
+
+        if(nums[secondPtr] !==0 ) {
+            let temp = nums[firstPtr];
+            nums[firstPtr] = nums[secondPtr];
+            nums[secondPtr] = temp;
+
+            firstPtr++;
+        }
+    }
+    return nums;
+
 };
 
 /*
