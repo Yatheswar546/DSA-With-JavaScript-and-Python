@@ -46,4 +46,5 @@ def reverseString(str):
 str = input("Enter the string: ");
 print(reverseString(str));
 
-
+# Time Complexity  - O(n)
+# Space Complexity - O(n)
