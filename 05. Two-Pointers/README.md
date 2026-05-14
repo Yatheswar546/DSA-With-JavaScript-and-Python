@@ -360,8 +360,8 @@ def is_palindrome(str):
 - Reverse Array
 - Reverse String        - Leetcode # 344
 - Reverse String II     - Leetcode # 541
-- Two Sum Sorted Array  - Leetcode # 
-- Move Zeroes
+- Two Sum Sorted Array  - Leetcode # 167
+- Move Zeroes           - Leetcode # 283
 
 ---
 
