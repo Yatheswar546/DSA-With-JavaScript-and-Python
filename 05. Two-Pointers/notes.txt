@@ -1,0 +1,120 @@
+Two Pointer Pattern:
+
+=> Reduces the number of nested loops needed, reducing Time Complexity
+
+=> The idea is to position 2 pointers which can traverse at the same speed and in opposite directions to solve the problem i.e. Palindrome
+
+For example: Consider the below problem using two loops
+
+function isSortedArray(arr) {
+    for(let i=0; i < arr.length-1; i++) {
+        for(let j=i+1; j < arr.length; j++) {
+            if(arr[i] > arr[j]) {
+                return false;
+            }
+        }
+    }
+    return false;
+}
+
+The above problem checks whether an array is sorted or not but it uses two for loops i.e. the Tc = O(n^2)
+But we can solve the same problem in O(n) using Two Pointers.
+
+
+----------------------------------------------------------------------------------
+
+What is a Template and why we need it ?
+
+=> Templates refer to predefined patterns commonly used for solving specific types of problems
+=> These templates serve as a starting point for solving problems.
+=> Templates encapsulate these patterns, making it easier to recognize and apply them to new problems.
+=> Don't have to start from scratch each time but can build upon existing templates.
+=> When time is limited having a set of go-to templates enables us to approach problems systematically and solve in time.
+
+----------------------------------------------------------------------------------
+
+Two Pointer Code Template:
+
+Two Pointer() {
+    // Initialize the two pointers at the beginning.
+    // Generally we start with either 
+    // start = 0, end = 0 (OR) start = 0, end = len-1 
+
+    left = 
+    right = 
+
+    // when we should stop iterating
+    // Generally iterate till:
+    // left < right (OR) right < len-1 
+
+    while(condition) {
+        ..............
+
+        if(conditon) {
+            // update the pointers
+        }
+
+    } 
+}
+
+----------------------------------------------------------------------------------
+
+How to use Two Pointers ?
+
+function isArraySorted(arr) {
+
+    let pointer1 = 0;                        // Initialize two pointers
+    let pointer2 = 1;
+
+    while (pointer2 < arr.length) {          // Condition
+        if (arr[pointer1] > arr[pointer2]) {
+            return false;
+        }
+
+        pointer1++;                          // Updating pointers
+        pointer2++;
+    }
+    return true;
+}
+
+
+let sortedArray = [1, 2, 3, 4, 5];
+let unsortedArray = [5, 2, 8, 1, 9];
+
+console.log(isSorted(sortedArray));  	    // Output: true
+console.log(isSorted(unsortedArray));	    // Output: false
+
+----------------------------------------------------------------------------------
+
+The Two Pointer Template: 
+
+=> The two pointers can move:
+    --> In opposite direction (towards each other) e.g. palindrome
+    --> In same direction  e.g isSortedArray
+    --> With different speed (slow & fast pointer) e.g. Linked List 
+
+=> When can we possibly use two pointers?
+    --> Generally when we need to work with elements that follow a specific constraint/pattern/condition
+    --> findpair, palindrome, reversing, etc.
+
+----------------------------------------------------------------------------------
+
+Summary:
+
+=> When to use this method?
+    When there is a need to have better time complexity than bruteforce traversal since this method reduces the need for nested traversals
+
+=> How to use this method?
+    Start with two pointers positioned as necessary to solve the problem and start traversing in the direction needed
+
+=> Additional takeaways
+    The pointers can traverse in different directions (e.g. Check for palindrome where pointers move towards each other from either end, moving in the same direction - Check if array is sorted).
+
+----------------------------------------------------------------------------------
+
+Interview Problems:
+
+1. Longest Substring Without Repeating Characters
+2. Minimum Window Substring    
+3. Container With Most Water   
+4. Trapping Rain Water 

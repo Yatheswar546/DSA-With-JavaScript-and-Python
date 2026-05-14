@@ -225,6 +225,24 @@ String: "thequickbrownfox"
 Substring: "quick"
 ```
 
+Example: 
+
+```txt
+String: Hello 
+
+Substrings: 
+
+length 1 : h, e, l, l, o
+length 2 : he, el, ll, lo
+length 3 : hel, ell, llo
+length 4 : hell, ello
+length 5 : hello
+
+Total no. of substrings = 15
+```
+
+### NOTE: Total no. of substrings = (n * (n+1)) / 2
+
 ---
 
 ### ✅ Subsequence
