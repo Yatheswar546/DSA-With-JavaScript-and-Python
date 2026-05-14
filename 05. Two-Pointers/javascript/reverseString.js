@@ -30,14 +30,27 @@
 
 function reverseString(str) {
 
+    let arr = str.split("");
+
     let leftPtr = 0;
-    let rightPtr = str.length - 1;
+    let rightPtr = arr.length - 1;
 
     while(leftPtr < rightPtr) {
 
-        
+        let temp = arr[leftPtr];
+        arr[leftPtr] = arr[rightPtr];
+        arr[rightPtr] = temp;
+
+        leftPtr++;
+        rightPtr--;
 
     }
 
+    return arr.join("");
 
 }
+
+/*
+    Time Complexity  - O(n)
+    Space Complexity - O(n)
+*/
