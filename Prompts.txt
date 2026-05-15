@@ -50,7 +50,14 @@ Diagonal traversal
 
 -------------------------------------------------------------------
 
+Problems on Matrix:
 
+1) Addition
+2) Subtraction
+3) Multiplication 
+4) Traversal
+5) Transpose
+6) Rotation
 
 -------------------------------------------------------------------------------------------
 
@@ -58,14 +65,24 @@ As you can see the above notes in on "Matrix". You are aware that we are prepari
 Analyze the present notes and what are the topics present in the notes and 
 Create a README file and add more information on those topics in both Python and JavaScript.
 I written very small notes on it.
-Add more Matrix Operations in Python and JavaScript separately.
-Mention to take matrix input from user in both 
 
-Add most commonly used interview questions on strings.
+(i) Mention to take matrix input from user in both cases(Python and Javascript).
+(ii) Explain Row Matrix and Column Matrix.
+(iii) Square Matrix and Rectangular Matrix
+(iii) Different Matrix Operations in Python and JavaScript separately.
+        |--> Matrix Traversal
+        |--> Addition of Matrix
+        |--> Multiplication of Matrix
+        |--> Diagonal Sum and Non-Diagonal Sum for (row == col and row != col)
+        etc... in this way most commonly used Matrix Operations just mention the pseudo code (algorithm) [no need to write codes in Python and JavaScript]
 
-The README file should meet our primary goals.
+(iv) Explain how to do Matrix Rotation also in a easy way
 
-Also gp, your README file content is good but try to add icons for side-headings and main headings so it will be good to attract
+Add most common use cases on where to use Matrix.
+Add most common mistakes in Matrix
+Add most commonly used interview questions on Matrix. [Note: Mention the questions which are available on Leetcode]
+
+The README file should meet our primary goals and also include icons as you did for previous README file
 
 
 
@@ -78,7 +95,7 @@ So create a README file with these points:
 => Most commonly used scenarios 
 => Most commonly asked interview problems on Two Pointers.
 
-The README file should meet our primary goals. and also include icons as you did for previous README file
+The README file should meet our primary goals and also include icons as you did for previous README file
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
