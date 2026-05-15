@@ -3,63 +3,60 @@ Good gp, Now let's move to next concept "Matrix". Below is the notes I written
 ---------------------------------------------------------------------------------------
 notes.txt
 
-Matrix:
+Binary Search:
 
 What?
-=> 2D arrays, grid like structure
-=> Think of 1D array stacked on top of each other
-=> Have the concept of rows and columns
+=> Searching algorithm (the other common one is Linear Search)
+=> Helps find a target element in an sorted array
 
 Why?
-=> Heavily used in real life, example board games
-=> Used in graph, backtracking, dynamic programming problems that need a grid representation
+=> Extremely fast searching
+=> Time complexity: O(log N). (In comparison, TC for Linear Search is O(n))
 
-Traversal  - visiting all elements
-=> We maintain two separate coordinates 
-=> Row index keeps track of the row while the column index keeps track of column
+Where?
+=> Can be used to find an element among billions of sorted elements
+=> Key Requirement for Data to apply BS
+=> Data should be sorted (Ascending/Descending or Alphabetic order)
 
-Dimension
-=> Represent size of a matrix
-=> row X col
+-------------------------------------------------------------------------------
 
-Single Row, Single Column, Square vs rectangular matrix
+Binary Search Steps:
 
--------------------------------------------------------------------
+Step 1
+=> Set the search space equal to sorted array
+=> Find a target element in a sorted array
 
-Visualize 1D, 2D, 3D array and so on…
+Step 2
+=> Compare the target with the middle element
+    --> Case 1: Target element = middle element
+        Return the index
+    --> Case 2: Target element < middle element
+        Discard the middle element and all the elements on the right of it
+    --> Case 3: Target element > middle element
+        Discard the middle element and all the elements on the left of it
 
-[I will insert an image of 1D, 2D, 3D Arrays]
+Step 3
+If the target was not found and there is no more elements left to search, return -1
 
--------------------------------------------------------------------
-
-Matrix Traversal:
-
-Simple matrix print
-=> Approach 1: For each row, print all the columns
-=> Approach 2: For each column, print all the rows
-
-Print the content of a single row
-=> Row index can iterate over the valid row range, column index is actually constant
-
-Print the content of a particular column
-=> Col index can iterate over the valid row range, row index is actually constant
-
-Diagonal traversal
-=> Approach 1 O(N^2): Traverse the entire matrix, O(N^2)
-=> Approach 2 O(N): Hint: Can we do better since we know the cells that we want to visit
-
--------------------------------------------------------------------
-
-Problems on Matrix:
-
-1) Addition
-2) Subtraction
-3) Multiplication 
-4) Traversal
-5) Transpose
-6) Rotation
 
 -------------------------------------------------------------------------------------------
+
+As you can see the above notes in on "Binary Search". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
+But as this is just an algorithm not a particular topic.
+So create a README file with these points: 
+=> Explain about this topic easily.
+=> How to implement in JavaScript and Python.
+=> Any easy tricks on when to use Binary Search.
+=> Most commonly used scenarios 
+=> Most commonly asked interview problems on Binary Search.
+
+=> Additionally, analyze the image I shared with you and try to use that for our README file
+
+The README file should meet our primary goals and also include icons as you did for previous README file
+
+
+
+
 
 As you can see the above notes in on "Matrix". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
 Analyze the present notes and what are the topics present in the notes and 
@@ -84,18 +81,6 @@ Add most commonly used interview questions on Matrix. [Note: Mention the questio
 
 The README file should meet our primary goals and also include icons as you did for previous README file
 
-
-
-As you can see the above notes in on "Arrays". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
-But as this is just an algorithm not a particular topic.
-So create a README file with these points: 
-=> Explain about this topic easily.
-=> How to implement in JavaScript and Python.
-=> Any easy tricks on when to use Two Pointers.
-=> Most commonly used scenarios 
-=> Most commonly asked interview problems on Two Pointers.
-
-The README file should meet our primary goals and also include icons as you did for previous README file
-
-
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
