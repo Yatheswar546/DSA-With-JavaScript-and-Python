@@ -48,9 +48,9 @@ Even for billions of elements, Binary Search performs very efficiently.
 
 ### 📊 Growth Rate Comparison
 
-> ![(Ologn - Comparison)]:
+> O(logn) - Comparison:
 >
-> (./ologn.png)
+> ![(Ologn - Comparison)](./ologn.png)
 
 
 This image shows why algorithms like:
