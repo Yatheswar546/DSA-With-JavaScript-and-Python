@@ -217,23 +217,20 @@ matrix = [
 ]
 ```
 
-#### Method 1
+#### Method
+
 ```py
-# Taking input for row elements
-row_input = input("Enter row elements: ") # User types: 1 2 3 4
-row_elements = [int(x) for x in row_input.split()]
+print("Enter your matrix row by row (press Enter on a blank line to finish):")
 
-# Taking input for col elements
-col_input = input("Enter col elements: ") # User types: 3 4 5 6
-col_elements = [int(x) for x in col_input.split()]
-
-# Combining them into a 2D matrix
-matrix = [row_elements, col_elements]
-```
-
-#### Method 2
-```py
-matrix = [list(map(int, input("Rows: ").split())), list(map(int, input("Cols: ").split()))]
+matrix = []
+while True:
+    line = input()
+    if not line.strip():  # Stops reading if the user enters a blank line
+        break
+    
+    # Split the line by spaces, convert each string to an integer, and create a list
+    row = [int(x) for x in line.split()]
+    matrix.append(row)
 ```
 
 ---
