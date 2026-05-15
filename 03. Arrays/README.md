@@ -135,6 +135,16 @@ for i in range(len(nums)):
 
 ---
 
+## NOTE: How to take input as array from user in 'Python'
+
+```py
+arr = list(map(int, input("Enter array elements : ").split()));
+```
+
+* In the above example the user must enter the array elements with single space as input
+
+---
+
 ## Array Methods Recap
 
 The following are some commonly used array operations.

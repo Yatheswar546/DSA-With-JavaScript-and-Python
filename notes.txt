@@ -1,0 +1,47 @@
+Matrix:
+
+What?
+=> 2D arrays, grid like structure
+=> Think of 1D array stacked on top of each other
+=> Have the concept of rows and columns
+
+Why?
+=> Heavily used in real life, example board games
+=> Used in graph, backtracking, dynamic programming problems that need a grid representation
+
+Traversal  - visiting all elements
+=> We maintain two separate coordinates 
+=> Row index keeps track of the row while the column index keeps track of column
+
+Dimension
+=> Represent size of a matrix
+=> row X col
+
+Single Row, Single Column, Square vs rectangular matrix
+
+-------------------------------------------------------------------
+
+Visualize 1D, 2D, 3D array and so on…
+
+[I will insert an image of 1D, 2D, 3D Arrays]
+
+-------------------------------------------------------------------
+
+Matrix Traversal:
+
+Simple matrix print
+=> Approach 1: For each row, print all the columns
+=> Approach 2: For each column, print all the rows
+
+Print the content of a single row
+=> Row index can iterate over the valid row range, column index is actually constant
+
+Print the content of a particular column
+=> Col index can iterate over the valid row range, row index is actually constant
+
+Diagonal traversal
+=> Approach 1 O(N^2): Traverse the entire matrix, O(N^2)
+=> Approach 2 O(N): Hint: Can we do better since we know the cells that we want to visit
+
+-------------------------------------------------------------------
+

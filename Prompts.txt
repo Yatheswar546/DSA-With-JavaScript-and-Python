@@ -1,132 +1,75 @@
-Good gp, Now let's move to next concept "Two Pointers". Below is the notes I written
+Good gp, Now let's move to next concept "Matrix". Below is the notes I written
 
 ---------------------------------------------------------------------------------------
 notes.txt
 
-Two Pointer Pattern:
+Matrix:
 
-=> Reduces the number of nested loops needed, reducing Time Complexity
+What?
+=> 2D arrays, grid like structure
+=> Think of 1D array stacked on top of each other
+=> Have the concept of rows and columns
 
-=> The idea is to position 2 pointers which can traverse at the same speed and in opposite directions to solve the problem i.e. Palindrome
+Why?
+=> Heavily used in real life, example board games
+=> Used in graph, backtracking, dynamic programming problems that need a grid representation
 
-For example: Consider the below problem using two loops
+Traversal  - visiting all elements
+=> We maintain two separate coordinates 
+=> Row index keeps track of the row while the column index keeps track of column
 
-function isSortedArray(arr) {
-    for(let i=0; i < arr.length-1; i++) {
-        for(let j=i+1; j < arr.length; j++) {
-            if(arr[i] > arr[j]) {
-                return false;
-            }
-        }
-    }
-    return false;
-}
+Dimension
+=> Represent size of a matrix
+=> row X col
 
-The above problem checks whether an array is sorted or not but it uses two for loops i.e. the Tc = O(n^2)
-But we can solve the same problem in O(n) using Two Pointers.
+Single Row, Single Column, Square vs rectangular matrix
 
+-------------------------------------------------------------------
 
-----------------------------------------------------------------------------------
+Visualize 1D, 2D, 3D array and so on…
 
-What is a Template and why we need it ?
+[I will insert an image of 1D, 2D, 3D Arrays]
 
-=> Templates refer to predefined patterns commonly used for solving specific types of problems
-=> These templates serve as a starting point for solving problems.
-=> Templates encapsulate these patterns, making it easier to recognize and apply them to new problems.
-=> Don't have to start from scratch each time but can build upon existing templates.
-=> When time is limited having a set of go-to templates enables us to approach problems systematically and solve in time.
+-------------------------------------------------------------------
 
-----------------------------------------------------------------------------------
+Matrix Traversal:
 
-Two Pointer Code Template:
+Simple matrix print
+=> Approach 1: For each row, print all the columns
+=> Approach 2: For each column, print all the rows
 
-Two Pointer() {
-    // Initialize the two pointers at the beginning.
-    // Generally we start with either 
-    // start = 0, end = 0 (OR) start = 0, end = len-1 
+Print the content of a single row
+=> Row index can iterate over the valid row range, column index is actually constant
 
-    left = 
-    right = 
+Print the content of a particular column
+=> Col index can iterate over the valid row range, row index is actually constant
 
-    // when we should stop iterating
-    // Generally iterate till:
-    // left < right (OR) right < len-1 
+Diagonal traversal
+=> Approach 1 O(N^2): Traverse the entire matrix, O(N^2)
+=> Approach 2 O(N): Hint: Can we do better since we know the cells that we want to visit
 
-    while(condition) {
-        ..............
-
-        if(conditon) {
-            // update the pointers
-        }
-
-    } 
-}
-
-----------------------------------------------------------------------------------
-
-How to use Two Pointers ?
-
-function isArraySorted(arr) {
-
-    let pointer1 = 0;                        // Initialize two pointers
-    let pointer2 = 1;
-
-    while (pointer2 < arr.length) {          // Condition
-        if (arr[pointer1] > arr[pointer2]) {
-            return false;
-        }
-
-        pointer1++;                          // Updating pointers
-        pointer2++;
-    }
-    return true;
-}
+-------------------------------------------------------------------
 
 
-let sortedArray = [1, 2, 3, 4, 5];
-let unsortedArray = [5, 2, 8, 1, 9];
-
-console.log(isSorted(sortedArray));  	    // Output: true
-console.log(isSorted(unsortedArray));	    // Output: false
-
-----------------------------------------------------------------------------------
-
-The Two Pointer Template: 
-
-=> The two pointers can move:
-    --> In opposite direction (towards each other) e.g. palindrome
-    --> In same direction  e.g isSortedArray
-    --> With different speed (slow & fast pointer) e.g. Linked List 
-
-=> When can we possibly use two pointers?
-    --> Generally when we need to work with elements that follow a specific constraint/pattern/condition
-    --> findpair, palindrome, reversing, etc.
-
-----------------------------------------------------------------------------------
-
-Summary:
-
-=> When to use this method?
-    When there is a need to have better time complexity than bruteforce traversal since this method reduces the need for nested traversals
-
-=> How to use this method?
-    Start with two pointers positioned as necessary to solve the problem and start traversing in the direction needed
-
-=> Additional takeaways
-    The pointers can traverse in different directions (e.g. Check for palindrome where pointers move towards each other from either end, moving in the same direction - Check if array is sorted).
-
-----------------------------------------------------------------------------------
-
-Interview Problems:
-
-1. Longest Substring Without Repeating Characters
-2. Minimum Window Substring    
-3. Container With Most Water   
-4. Trapping Rain Water 
 
 -------------------------------------------------------------------------------------------
 
-As you can see the above notes in on "Two Pointers". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
+As you can see the above notes in on "Matrix". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
+Analyze the present notes and what are the topics present in the notes and 
+Create a README file and add more information on those topics in both Python and JavaScript.
+I written very small notes on it.
+Add more Matrix Operations in Python and JavaScript separately.
+Mention to take matrix input from user in both 
+
+Add most commonly used interview questions on strings.
+
+The README file should meet our primary goals.
+
+Also gp, your README file content is good but try to add icons for side-headings and main headings so it will be good to attract
+
+
+
+As you can see the above notes in on "Arrays". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
 But as this is just an algorithm not a particular topic.
 So create a README file with these points: 
 => Explain about this topic easily.
@@ -136,16 +79,6 @@ So create a README file with these points:
 => Most commonly asked interview problems on Two Pointers.
 
 The README file should meet our primary goals. and also include icons as you did for previous README file
-
-As you can see the above notes in on "Two Pointers". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
-Analyze the present notes and what are the topics present in the notes and 
-Create a README file and add more information on those topics in both Python and JavaScript.
-Add more Strings Operations in Python and JavaScript separately.
-Add most commonly used interview questions on strings.
-
-The README file should meet our primary goals.
-
-Also gp, your README file content is good but try to add icons for side-headings and main headings so it will be good to attract
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
