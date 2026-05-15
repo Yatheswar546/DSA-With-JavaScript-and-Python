@@ -1,6 +1,6 @@
 // Problem Description:
 
-// Tranpose the below matrix 
+// Transpose the below matrix 
 
 // function transposeMatrix(matrix) {
 
