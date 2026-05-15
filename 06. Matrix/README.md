@@ -197,9 +197,9 @@ You can visualize:
 - 2D Array → Grid
 - 3D Array → Collection of grids
 
-> ![Matrix Visualization]:
+> Matrix Visualization:
 >
-> (./matrix-visualization.png)
+> ![Matrix Visualization](./matrix-visualization.png)
 
 ---
 
