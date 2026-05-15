@@ -197,9 +197,9 @@ You can visualize:
 - 2D Array → Grid
 - 3D Array → Collection of grids
 
-> Add image here:
+> ![Matrix Visualization]:
 >
-> ![Substring vs Subsequence](./matrix-visualization.png)
+> (./matrix-visualization.png)
 
 ---
 
