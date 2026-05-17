@@ -43,3 +43,6 @@ def reShapeMatrix(mat, r, c):
     return resMatrix
 
 print(reShapeMatrix([[1,2,3],[4,5,6]], 3, 2));
+
+# Time Complexity  : O(n*m)
+# Space Complexity : O(r*c)
