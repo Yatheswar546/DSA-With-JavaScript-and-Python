@@ -20,7 +20,11 @@
 // 0 <= x <= 231 - 1
 
 var mySqrt = function(x) {
-        
+    
+    if(x == 0) {
+        return 0
+    }
+    
     if(x < 2) {
         return 1;
     }
@@ -51,6 +55,4 @@ var mySqrt = function(x) {
     return ans;
     
 };
-
-console.log(mySqrt(4))
 
