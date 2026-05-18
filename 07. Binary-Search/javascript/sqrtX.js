@@ -56,3 +56,7 @@ var mySqrt = function(x) {
     
 };
 
+/*
+    Time Complexity  : O(logn)
+    Space Complexity : O(1)
+*/
