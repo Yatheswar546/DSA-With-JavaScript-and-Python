@@ -20,32 +20,37 @@
 // 0 <= x <= 231 - 1
 
 var mySqrt = function(x) {
+        
+    if(x < 2) {
+        return 1;
+    }
     
     let n = Math.floor(x/2);
-    
+
     let left = 1;
     let right = n;
     
     while(left<=right) {
         
         let mid = Math.floor((left + right) / 2);
-        
-        if(mid===x) {
+
+        if(mid * mid == x) {
             return mid;
         }
         
         else if((mid * mid)<x) {
             ans = mid
-            right = mid-1
-        }
-        
-        else {
             left = mid+1
         }
         
+        else {
+            right = mid-1
+        }
+        
     }
+    return ans;
     
 };
 
-console.log(mySqrt(8))
+console.log(mySqrt(4))
 
