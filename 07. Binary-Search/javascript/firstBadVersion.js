@@ -38,7 +38,6 @@ var solution = function(isBadVersion) {
             let mid = Math.floor((left+right) / 2);
 
             if(isBadVersion(mid)) {
-                ans = mid
                 right = mid - 1
             }
 
@@ -48,7 +47,12 @@ var solution = function(isBadVersion) {
 
         }
 
-        return ans
+        return left;
 
     };
 };
+
+/* 
+    Time Complexity  : O(logn)
+    Space Complexity : O(1)
+*/
