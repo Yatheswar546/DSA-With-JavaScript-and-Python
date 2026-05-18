@@ -44,3 +44,6 @@ def sqrtX(x):
     return ans;
 
 print(sqrtX(10));
+
+# Time Complexity  : O(logn)
+# Space Complexity : O(1)
