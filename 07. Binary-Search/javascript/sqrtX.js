@@ -18,3 +18,34 @@
  
 // Constraints:
 // 0 <= x <= 231 - 1
+
+var mySqrt = function(x) {
+    
+    let n = Math.floor(x/2);
+    
+    let left = 1;
+    let right = n;
+    
+    while(left<=right) {
+        
+        let mid = Math.floor((left + right) / 2);
+        
+        if(mid===x) {
+            return mid;
+        }
+        
+        else if((mid * mid)<x) {
+            ans = mid
+            right = mid-1
+        }
+        
+        else {
+            left = mid+1
+        }
+        
+    }
+    
+};
+
+console.log(mySqrt(8))
+
