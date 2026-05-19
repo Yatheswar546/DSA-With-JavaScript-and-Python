@@ -95,15 +95,17 @@ var removeDuplicates = function(nums) {
 /*
     The main logic is about rewriting the array elements and returning the count of unique elements.
     It is not about removing elements
-    
-You’ll see similar thinking in:
 
-Move Zeroes
-Remove Element
-Sort Colors
-Merge Arrays
-Partition Array
-Dutch National Flag
+    The important transformation is:
+        Stop thinking about deleting.
+        Start thinking about rewriting valid data forward.
 
-The important transformation is:
+    You’ll see similar thinking in:
+
+    Move Zeroes
+    Remove Element
+    Sort Colors
+    Merge Arrays
+    Partition Array
+    Dutch National Flag
 */
