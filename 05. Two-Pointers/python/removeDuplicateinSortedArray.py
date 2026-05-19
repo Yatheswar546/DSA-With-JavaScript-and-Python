@@ -57,3 +57,6 @@ def removeDuplicates(nums):
 
 nums = [1,1,2,3,3,3,3,4]
 print(removeDuplicates(nums));
+
+# Time Complexity  : O(n)
+# Space Complexity : O(1)
