@@ -25,3 +25,32 @@
 // The result of the merge is [1].
 // Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
 
+var merge = function(nums1, m, nums2, n) {
+    
+    let i = m-1, j=n-1, k=(m+n)-1;
+    
+    while(i>=0 && j>=0) {
+        if(nums1[i] >= nums2[j]) {
+            nums1[k] = nums1[i];
+            i--;
+            k--;
+        }
+        else if(nums1[i] < nums2[j]) {
+            nums1[k] = nums2[j];
+            j--;
+            k--;
+        }
+    }
+    
+    while(j>=0) {
+        nums1[k] = nums2[j];
+        k--;
+        j--;
+    }
+    
+};
+
+/*
+    Time Complexity  : O(m+n)
+    Space Complexity : O(1)
+*/
