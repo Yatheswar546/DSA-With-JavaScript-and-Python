@@ -17,19 +17,6 @@
 // Input: nums = [1,2,1,3,5,6,4]
 // Output: 5
 // Explanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.
- 
-// initialize left = 0, right = len(arr)-1, 
-
-// while(left<right) :
-//     mid=(left + right) / 2
-    
-//     if(arr[mid] < arr[mid+1] ) :
-//            left = mid - 1 // moving towards right part of array
- 
-//     else if (arr[mid] > arr[mid+1]):
-//            right = mid // moving towards left part of array
-
-// return left 
 
 var findPeakElement = function(nums) {
     
