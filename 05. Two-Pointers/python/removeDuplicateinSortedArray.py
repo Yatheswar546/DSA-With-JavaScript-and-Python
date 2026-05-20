@@ -55,7 +55,7 @@ def removeDuplicates(nums):
 
     return j+1
 
-nums = [1,1,2,3,3,3,3,4]
+nums = [1,1,2,2,3,4]
 print(removeDuplicates(nums));
 
 # Time Complexity  : O(n)
