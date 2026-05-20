@@ -47,20 +47,24 @@ var removeElement = function(nums, val) {
     let i=0, j=nums.length-1
 
     while(i<=j) {
-        if(nums[j] == val) {
+ 
+        while(i<=j && nums[j]==val) {
             j--;
         }
 
-        if(nums[i] != val) {
-            i++;
-        }
-
-        else if(nums[i] == val) {
+        if(i<=j && nums[i] == val) {
             nums[i] = nums[j];
             j--;
         }
+
+        i++;
     }
 
-    return j;
+    return j+1;
 
 };
+
+/*
+    Time Complexity  : O(n)
+    Space Complexity : O(1)
+*/
