@@ -33,3 +33,48 @@
 // s contains English letters (upper-case and lower-case), digits, and spaces ' '.
 
 // There is at least one word in s.
+
+// Code:
+
+let s = "  hello   world   ";
+let n = s.length;
+
+let word = ''
+let finalString = ''
+
+for(let i=n-1; i>=0; i--){
+    
+    if(s[i] == ' ') {
+        continue;
+    } 
+    
+    else {
+      while(i>=0 && s[i] != ' ') {
+          word += s[i];
+          i--;
+      }
+        
+      for(let j=word.length-1; j>=0; j--) {
+          finalString += word[j];
+      }
+      
+      while(i>=0 && s[i]==' ') {
+          i--;
+      }
+      
+      if(i>=0) {
+          finalString+=' '
+      }
+      word = ''
+      
+      i++
+        
+    }
+}
+
+console.log(finalString);
+
+/*
+    Time Complexity  : O(n)
+    Space Complexity : O(n)
+*/
