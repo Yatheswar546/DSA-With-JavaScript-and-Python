@@ -3,45 +3,140 @@ Good gp, Now let's move to next concept "Matrix". Below is the notes I written
 ---------------------------------------------------------------------------------------
 notes.txt
 
-Binary Search:
+Recursion:
 
 What?
-=> Searching algorithm (the other common one is Linear Search)
-=> Helps find a target element in an sorted array
+=> Recursion is a method where the solution to a problem depends on solutions to smaller instances of the same problem. A method (function) can call itself in order to solve the problem.
+
+Real world example
+=> Counting number of rows in a movie theater
+=> Searching for a word in dictionary
 
 Why?
-=> Extremely fast searching
-=> Time complexity: O(log N). (In comparison, TC for Linear Search is O(n))
+=> Recursive solutions are often simpler and easier to understand and implement than iterative solutions.
+=> Complex real world problems can be easily represented using recursion.
+=> Recursion is well-suited for processing and manipulating data structures with recursive properties, such as linked lists, trees, and graphs.
+=> Recursion encourages a recursive mindset, which is a valuable problem-solving skill applicable to various domains. It trains the ability to break down complex tasks into simpler ones and solve them independently.
 
-Where?
-=> Can be used to find an element among billions of sorted elements
-=> Key Requirement for Data to apply BS
-=> Data should be sorted (Ascending/Descending or Alphabetic order)
+When?
+=> Use when the problem can be broken down into smaller, repetitive problems.
+=> It is especially good for working on things that have many possible branches and are too complex for an iterative approach.
 
--------------------------------------------------------------------------------
+Is recursion better than iteration?
+=> Problems that we solve using recursion can also be solved iteratively!
+=> Some problems requires multiple nested loops where it is easier to implement a recursive solution
+=> However, for most of the cases, recursive solutions consume more space as compared to iterative solutions. Why?
 
-Binary Search Steps:
+========================================================
 
-Step 1
-=> Set the search space equal to sorted array
-=> Find a target element in a sorted array
+Recursion - Key Aspects:
 
-Step 2
-=> Compare the target with the middle element
-    --> Case 1: Target element = middle element
-        Return the index
-    --> Case 2: Target element < middle element
-        Discard the middle element and all the elements on the right of it
-    --> Case 3: Target element > middle element
-        Discard the middle element and all the elements on the left of it
+Base/Terminating condition
+=> The case for which the solution can be stated non‐recursively/directly/trivially.
 
-Step 3
-If the target was not found and there is no more elements left to search, return -1
+Recursive condition
+=> The case for which the  solution is expressed in terms of a smaller version of itself. 
 
+Function signature
+=> Return type
+=> Input parameter
+
+========================================================
+
+Recursive Template:
+
+void recurse() {
+    ........
+    recurse();  // recursive call
+    ........
+}
+
+int main() {
+    ........
+    recurse();  // recursive call
+    ........
+}
+
+========================================================
+
+Example of Recursive Problem : 
+
+1) Sum of n natural numbers
+
+2) Fibonacci Series 
+    => It’s a series where sum of nth term is equal to sum of previous 2 terms
+    => F(n) = F(n-1) + F(n-2) for each n >= 2
+    => F(1) =0
+    => F(2) = 1
+    => Series: 0, 1, 1, 2, 3, 5, 8, 13, 21  . . .
+
+    Visualization: https://visualgo.net/en/recursion
+
+========================================================
+
+Extra Points
+=> Iterative is Bottom-Up approach
+=> Recursive is Top-Down approach
+=> Recursive uses Stack Memory (Call Stack)
+=> Recursions has bad Tc and Sp 
+
+
+Steps to write a recursive function:
+1) Base condition
+2) Recursive Recurrence
+3) Return Type 
+
+
+f(n)    =>  n   + f(n-1)
+f(n-1)  =>  n-1 + f(n-2)
+f(n-2)  =>  n-2 + f(n-3)
+.
+.
+.
+.
+.
+.
+.
+F(x)  => x + F(x-1) 
+This is Recursive Recurrence and this is why Recursion is called Top Down approach.
+
+Eg: Sum of N natural numbers
+
+function naturalSum(n) {
+
+    if(n<=1) {
+        return 1;
+    }
+
+    return n + naturalSum(n-1)
+
+}
+
+Sp : O(n)
+Tc : ?
+
+Eg: Fibonacci Series
+
+function fibonacci(n) {
+
+    if(n<=1) {
+        return n;
+    }
+
+    return fibonacci(n-1) + fibonacci(n-2)
+}
+
+Sp : O(n)
+Tc : 2^(n)
+
+
+In recursions, 
+for Sp we observe vertical height of recursive tree
+for Tc we observe horizontal width of recursive tree 
 
 -------------------------------------------------------------------------------------------
 
-As you can see the above notes in on "Binary Search". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
+As you can see the above notes in on "Recursion". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
 But as this is just an algorithm not a particular topic.
 So create a README file with these points: 
 => Explain about this topic easily.
