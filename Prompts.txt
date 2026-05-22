@@ -115,6 +115,7 @@ function naturalSum(n) {
 Sp : O(n)
 Tc : O(n)
 
+
 Eg: Fibonacci Series
 
 function fibonacci(n) {
@@ -153,6 +154,27 @@ function printN(N) {
 
 -------------------------------------------------------------------------------------------
 
+As you can see the above notes in on "Recursions". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
+Analyze the present notes and what are the topics present in the notes and 
+Create a README file and add more information on those topics in both Python and JavaScript.
+I written very small notes on it.
+
+(i) What is a recursion
+(ii) How recursions are different from Iterations if they are better than them or not 
+(iii) Also at the end I have written a extra notes, use that notes correctly in the README 
+
+Add most common use cases on where to use Recursions.
+Add most common mistakes in Recursions
+Add most commonly used interview questions on Recursions. [Note: Mention the questions which are available on Leetcode]
+
+As Recursions are most confused topic, try to explain it very simple and easy including diagrams, stack memory, call stack.
+
+The README file should meet our primary goals and also include icons as you did for previous README file
+
+
+
+
+
 As you can see the above notes in on "Recursion". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
 But as this is just an algorithm not a particular topic.
 So create a README file with these points: 
@@ -163,33 +185,6 @@ So create a README file with these points:
 => Most commonly asked interview problems on Binary Search.
 
 => Additionally, analyze the image I shared with you and try to use that for our README file
-
-The README file should meet our primary goals and also include icons as you did for previous README file
-
-
-
-
-
-As you can see the above notes in on "Matrix". You are aware that we are preparing our repo for both 'Python' and 'JavaScript'.
-Analyze the present notes and what are the topics present in the notes and 
-Create a README file and add more information on those topics in both Python and JavaScript.
-I written very small notes on it.
-
-(i) Mention to take matrix input from user in both cases(Python and Javascript).
-(ii) Explain Row Matrix and Column Matrix.
-(iii) Square Matrix and Rectangular Matrix
-(iii) Different Matrix Operations in Python and JavaScript separately.
-        |--> Matrix Traversal
-        |--> Addition of Matrix
-        |--> Multiplication of Matrix
-        |--> Diagonal Sum and Non-Diagonal Sum for (row == col and row != col)
-        etc... in this way most commonly used Matrix Operations just mention the pseudo code (algorithm) [no need to write codes in Python and JavaScript]
-
-(iv) Explain how to do Matrix Rotation also in a easy way
-
-Add most common use cases on where to use Matrix.
-Add most common mistakes in Matrix
-Add most commonly used interview questions on Matrix. [Note: Mention the questions which are available on Leetcode]
 
 The README file should meet our primary goals and also include icons as you did for previous README file
 
