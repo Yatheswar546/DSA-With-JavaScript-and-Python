@@ -113,7 +113,7 @@ function naturalSum(n) {
 }
 
 Sp : O(n)
-Tc : ?
+Tc : O(n)
 
 Eg: Fibonacci Series
 
@@ -132,7 +132,24 @@ Tc : 2^(n)
 
 In recursions, 
 for Sp we observe vertical height of recursive tree
-for Tc we observe horizontal width of recursive tree 
+for Tc we observe horizontal width of recursive tree     
+
+Example to understand Recursion better:
+
+function printN(N) {
+
+    if(N <= 0) {
+        return;
+    }
+
+    printN(N-1);
+
+    console.log(N + " ");
+
+    printN(N-1);
+
+}
+
 
 -------------------------------------------------------------------------------------------
 
