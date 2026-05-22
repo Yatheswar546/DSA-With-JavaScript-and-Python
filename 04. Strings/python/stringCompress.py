@@ -29,7 +29,7 @@
 
 # Code
 
-s = 'aabbbbccccd'
+s = input("Enter String: ")
 n = len(s)
 
 res = ''
@@ -44,7 +44,6 @@ for i in range(1, n):
         res += s[i-1]
         res += str(count)
         count = 1
-        print(res)
 
 res += s[n-1]
 res += str(count)
