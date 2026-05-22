@@ -355,6 +355,10 @@ This breakdown is why recursion is called:
 
 ---
 
+![Sum of n Natural Numbers](./sumofNumbers.png)
+
+---
+
 ### 🔢 Example 2: Fibonacci Series
 
 ---
@@ -439,6 +443,10 @@ fibonacci(4)
      / \
     1   0
 ```
+
+---
+
+![Fibonacci Series](./fibonacciSeries.png)
 
 ---
 
