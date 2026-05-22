@@ -127,7 +127,7 @@ function fibonacci(n) {
 }
 
 Sp : O(n)
-Tc : 2^(n)
+Tc : O(2^n)
 
 
 In recursions, 
