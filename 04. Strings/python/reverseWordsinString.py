@@ -36,7 +36,7 @@
 
 # Code
 
-s = "  hello    world   "
+s = input("Enter String: ")
 n = len(s)
 
 word = ""
@@ -65,7 +65,7 @@ while(i>=0):
 
         word = ''
 
-print(finalString, len(finalString));
+print(finalString);
 
 # Time Complexity  : O(n)
 # Space Complexity : O(n)
