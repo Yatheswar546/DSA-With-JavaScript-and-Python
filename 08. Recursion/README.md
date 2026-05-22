@@ -12,7 +12,7 @@ Instead of solving the complete problem at once, recursion:
 
 ---
 
-# 🧠 Simple Idea Behind Recursion
+## 🧠 Simple Idea Behind Recursion
 
 Think like this:
 
@@ -30,9 +30,9 @@ Once the base condition is reached, the function starts returning back.
 
 ---
 
-# 🌍 Real World Examples
+## 🌍 Real World Examples
 
-## 🎬 Counting Rows in a Movie Theater
+### 🎬 Counting Rows in a Movie Theater
 
 ```txt
 Row 10
@@ -44,7 +44,7 @@ asks Row 7
 
 ---
 
-## 📖 Searching a Word in Dictionary
+### 📖 Searching a Word in Dictionary
 
 You repeatedly:
 - Divide pages
@@ -55,7 +55,7 @@ This resembles recursive thinking.
 
 ---
 
-# ❓ Why Learn Recursion?
+## ❓ Why Learn Recursion?
 
 Recursion is important because:
 
@@ -82,7 +82,7 @@ Recursion is important because:
 
 ---
 
-# 📌 When Should We Use Recursion?
+## 📌 When Should We Use Recursion?
 
 Use recursion when:
 
@@ -97,7 +97,7 @@ Use recursion when:
 
 ---
 
-## Common Examples
+### Common Examples
 
 - Fibonacci
 - Tree Traversal
@@ -108,13 +108,13 @@ Use recursion when:
 
 ---
 
-# 🔄 Recursion vs Iteration
+## 🔄 Recursion vs Iteration
 
 Many recursive problems can also be solved iteratively.
 
 ---
 
-# ⚔️ Recursion vs Iteration
+## ⚔️ Recursion vs Iteration
 
 | Feature | Recursion | Iteration |
 |---------|------------|-----------|
@@ -127,9 +127,9 @@ Many recursive problems can also be solved iteratively.
 
 ---
 
-# 🧠 Is Recursion Better Than Iteration?
+## 🧠 Is Recursion Better Than Iteration?
 
-## ✅ Recursion is Better When:
+### ✅ Recursion is Better When:
 
 - Problem is naturally recursive
 - Multiple nested loops are needed
@@ -138,7 +138,7 @@ Many recursive problems can also be solved iteratively.
 
 ---
 
-## ✅ Iteration is Better When:
+### ✅ Iteration is Better When:
 
 - Memory optimization is important
 - Recursion depth becomes huge
@@ -146,7 +146,7 @@ Many recursive problems can also be solved iteratively.
 
 ---
 
-# ⚠️ Why Does Recursion Use More Space?
+## ⚠️ Why Does Recursion Use More Space?
 
 Every recursive call is stored inside:
 - Call Stack
@@ -157,11 +157,11 @@ Each function call waits until:
 
 ---
 
-# 🧱 Key Aspects of Recursion
+## 🧱 Key Aspects of Recursion
 
 ---
 
-# 1️⃣ Base Condition
+### 1️⃣ Base Condition
 
 The stopping condition.
 
@@ -170,7 +170,7 @@ Without it:
 
 ---
 
-## Example
+#### Example
 
 ```txt
 if(n <= 1)
@@ -178,13 +178,13 @@ if(n <= 1)
 
 ---
 
-# 2️⃣ Recursive Condition
+### 2️⃣ Recursive Condition
 
 The function calling itself with a smaller input.
 
 ---
 
-## Example
+#### Example
 
 ```txt
 return n + sum(n - 1)
@@ -192,7 +192,7 @@ return n + sum(n - 1)
 
 ---
 
-# 3️⃣ Function Signature
+### 3️⃣ Function Signature
 
 Includes:
 - Return type
@@ -200,9 +200,9 @@ Includes:
 
 ---
 
-# 🔄 General Recursive Template
+## 🔄 General Recursive Template
 
-## JavaScript
+### JavaScript
 
 ```js
 function recurse(input) {
@@ -220,7 +220,7 @@ function recurse(input) {
 
 ---
 
-## Python
+### Python
 
 ```py
 def recurse(input):
@@ -235,7 +235,7 @@ def recurse(input):
 
 ---
 
-# 📊 Understanding Call Stack
+## 📊 Understanding Call Stack
 
 Every recursive call gets added to the stack.
 
@@ -255,9 +255,9 @@ Then functions return back in reverse order.
 
 ---
 
-# 🧠 Call Stack Visualization
+## 🧠 Call Stack Visualization
 
-## Example
+### Example
 
 ```txt
 sum(3)
@@ -288,11 +288,11 @@ Returning:
 
 ---
 
-# 🔢 Example 1: Sum of N Natural Numbers
+### 🔢 Example 1: Sum of N Natural Numbers
 
 ---
 
-# JavaScript
+### JavaScript
 
 ```js
 function naturalSum(n) {
@@ -307,7 +307,7 @@ function naturalSum(n) {
 
 ---
 
-# Python
+### Python
 
 ```py
 def natural_sum(n):
@@ -320,7 +320,7 @@ def natural_sum(n):
 
 ---
 
-# 📈 Time Complexity
+### 📈 Time Complexity
 
 ```txt
 O(n)
@@ -328,7 +328,7 @@ O(n)
 
 ---
 
-# 📦 Space Complexity
+### 📦 Space Complexity
 
 ```txt
 O(n)
@@ -341,7 +341,7 @@ Because:
 
 ---
 
-# 🧠 Recursive Recurrence
+### 🧠 Recursive Recurrence
 
 ```txt
 f(n)   = n + f(n-1)
@@ -355,11 +355,11 @@ This breakdown is why recursion is called:
 
 ---
 
-# 🔢 Example 2: Fibonacci Series
+### 🔢 Example 2: Fibonacci Series
 
 ---
 
-# 📘 Fibonacci Formula
+### 📘 Fibonacci Formula
 
 ```txt
 F(n) = F(n-1) + F(n-2)
@@ -380,7 +380,7 @@ Series:
 
 ---
 
-# JavaScript
+### JavaScript
 
 ```js
 function fibonacci(n) {
@@ -395,7 +395,7 @@ function fibonacci(n) {
 
 ---
 
-# Python
+### Python
 
 ```py
 def fibonacci(n):
@@ -408,7 +408,7 @@ def fibonacci(n):
 
 ---
 
-# 📈 Time Complexity
+### 📈 Time Complexity
 
 ```txt
 O(2^n)
@@ -416,7 +416,7 @@ O(2^n)
 
 ---
 
-# 📦 Space Complexity
+### 📦 Space Complexity
 
 ```txt
 O(n)
@@ -424,7 +424,7 @@ O(n)
 
 ---
 
-# 🌳 Recursive Tree Visualization
+### 🌳 Recursive Tree Visualization
 
 Example:
 
@@ -442,25 +442,25 @@ fibonacci(4)
 
 ---
 
-# 🧠 How to Analyze Recursive Complexity?
+## 🧠 How to Analyze Recursive Complexity?
 
-## Time Complexity
+### Time Complexity
 
 Observe:
 > Horizontal Width of Recursive Tree
 
 ---
 
-## Space Complexity
+### Space Complexity
 
 Observe:
 > Vertical Height of Recursive Tree
 
 ---
 
-# 🔄 Example to Understand Recursion Better
+## 🔄 Example to Understand Recursion Better
 
-## JavaScript
+### JavaScript
 
 ```js
 function printN(N) {
@@ -479,7 +479,7 @@ function printN(N) {
 
 ---
 
-# Python
+### Python
 
 ```py
 def print_n(N):
@@ -496,27 +496,27 @@ def print_n(N):
 
 ---
 
-# 🛠️ Steps to Write a Recursive Function
+## 🛠️ Steps to Write a Recursive Function
 
-## Step 1
+### Step 1
 
 Define Base Condition
 
 ---
 
-## Step 2
+### Step 2
 
 Write Recursive Recurrence
 
 ---
 
-## Step 3
+### Step 3
 
 Decide Return Type
 
 ---
 
-# 🌍 Common Use Cases of Recursion
+## 🌍 Common Use Cases of Recursion
 
 Recursion is heavily used in:
 
@@ -532,9 +532,9 @@ Recursion is heavily used in:
 
 ---
 
-# 💡 Most Common Recursion Interview Questions
+## 💡 Most Common Recursion Interview Questions
 
-## Beginner Level
+### Beginner Level
 
 - LeetCode 509 → Fibonacci Number
 - LeetCode 70 → Climbing Stairs
@@ -543,7 +543,7 @@ Recursion is heavily used in:
 
 ---
 
-## Medium Level
+### Medium Level
 
 - LeetCode 46 → Permutations
 - LeetCode 78 → Subsets
@@ -552,7 +552,7 @@ Recursion is heavily used in:
 
 ---
 
-## Advanced Level
+### Advanced Level
 
 - LeetCode 51 → N-Queens
 - LeetCode 37 → Sudoku Solver
@@ -561,7 +561,7 @@ Recursion is heavily used in:
 
 ---
 
-# ⚠️ Common Beginner Mistakes
+## ⚠️ Common Beginner Mistakes
 
 - Forgetting base condition
 - Infinite recursion
@@ -572,7 +572,7 @@ Recursion is heavily used in:
 
 ---
 
-# 🧠 Interview Notes
+## 🧠 Interview Notes
 
 - Recursion is a very important DSA concept.
 - Most tree and graph problems use recursion.
@@ -587,7 +587,7 @@ Recursion is heavily used in:
 
 ---
 
-# 🚀 Quick Revision Tips
+## 🚀 Quick Revision Tips
 
 | Concept | Key Idea |
 |---------|----------|
@@ -599,7 +599,7 @@ Recursion is heavily used in:
 
 ---
 
-# 📌 Summary
+## 📌 Summary
 
 In this section, we covered:
 
