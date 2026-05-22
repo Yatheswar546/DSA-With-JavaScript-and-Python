@@ -114,7 +114,7 @@ Many recursive problems can also be solved iteratively.
 
 ---
 
-## ⚔️ Recursion vs Iteration
+### ⚔️ Recursion vs Iteration
 
 | Feature | Recursion | Iteration |
 |---------|------------|-----------|
