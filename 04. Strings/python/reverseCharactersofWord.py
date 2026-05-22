@@ -19,7 +19,7 @@
 # Constraints
 # 1 <= str.length <= 10^5
 
-s = 'abc def ghi'
+s = input("Enter String: ")
 n = len(s)
 
 finalString = ''
