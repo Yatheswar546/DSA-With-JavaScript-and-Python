@@ -546,7 +546,6 @@ Recursion is heavily used in:
 
 - LeetCode 509 → Fibonacci Number
 - LeetCode 70 → Climbing Stairs
-- LeetCode 344 → Reverse String
 - LeetCode 231 → Power of Two
 
 ---
