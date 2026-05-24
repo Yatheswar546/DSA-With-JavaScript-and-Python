@@ -480,15 +480,37 @@ print(nums)
 
 ---
 
-## Problems Solved Using Arrays
+## 💡 Most Common Interview Problems
 
-- Find maximum/minimum element
-- Reverse an array
-- Rotate an array
-- Search for an element
-- Find duplicates
-- Prefix sum problems
-- Sliding window problems
+### Beginner Level
+
+- LeetCode 53 → Maximum Subarray
+- LeetCode 189 → Rotate Array
+- LeetCode 1929 → Concatenation of Array
+- LeetCode 217 → Contains Duplicate
+- LeetCode 485 → Max Consecutive Ones
+- LeetCode 66 → Plus One
+
+---
+
+### Intermediate Level
+
+- LeetCode 238 → Product of Array Except Self
+- LeetCode 75 → Sort Colors
+- LeetCode 169 → Majority Element
+- LeetCode 31 → Next Permutation
+- LeetCode 73 → Set Matrix Zeroes
+- LeetCode 54 → Spiral Matrix
+
+---
+
+### Advanced Level
+
+- LeetCode 41 → First Missing Positive
+- LeetCode 84 → Largest Rectangle in Histogram
+- LeetCode 128 → Longest Consecutive Sequence
+- LeetCode 4 → Median of Two Sorted Arrays
+- LeetCode 42 → Trapping Rain Water
 
 ---
 
