@@ -586,10 +586,10 @@ for i in range(len(str)):
 
 ### Beginner Level
 
-- Reverse a string
-- Check palindrome
+- LeetCode 344 → Reverse String
+- LeetCode 125 → Valid Palindrome
 - Count vowels and consonants
-- Find frequency of characters
+- LeetCode 242 → Valid Anagram
 - Remove duplicate characters
 - Find largest word in a sentence
 
@@ -597,12 +597,12 @@ for i in range(len(str)):
 
 ### Intermediate Level
 
-- Longest common prefix
-- Valid anagram
-- String compression
-- Reverse words in a sentence
-- First non-repeating character
-- Check rotation of strings
+- LeetCode 14 → Longest Common Prefix
+- LeetCode 242 → Valid Anagram
+- LeetCode 443 → String Compression
+- LeetCode 151 → Reverse Words in a String
+- LeetCode 387 → First Unique Character in a String
+- LeetCode 796 → Rotate String
 
 ---
 
@@ -611,8 +611,8 @@ for i in range(len(str)):
 - KMP Algorithm
 - Rabin-Karp Algorithm
 - Z Algorithm
-- Longest Palindromic Substring
-- Minimum Window Substring
+- LeetCode 5 → Longest Palindromic Substring
+- LeetCode 76 → Minimum Window Substring
 
 ---
 
