@@ -355,34 +355,34 @@ def is_palindrome(str):
 
 ### Beginner Level
 
-- Check Palindrome      - Leetcode # 9
-- Valid Palindrome      - Leetcode # 125
+- LeetCode 9 → Palindrome Number
+- LeetCode 125 → Valid Palindrome
 - Reverse Array
-- Reverse String        - Leetcode # 344
-- Reverse String II     - Leetcode # 541
-- Two Sum Sorted Array  - Leetcode # 167
-- Move Zeroes           - Leetcode # 283
+- LeetCode 344 → Reverse String
+- LeetCode 541 → Reverse String II
+- LeetCode 167 → Two Sum II - Input Array Is Sorted
+- LeetCode 283 → Move Zeroes
 
 ---
 
-### Intermediate Level
+### Medium Level
 
-- Remove Duplicates from Sorted Array
-- Merge Sorted Arrays
-- Valid Palindrome II
-- Squares of Sorted Array
-- Sort Colors
+- LeetCode 26 → Remove Duplicates from Sorted Array
+- LeetCode 88 → Merge Sorted Array
+- LeetCode 680 → Valid Palindrome II
+- LeetCode 977 → Squares of a Sorted Array
+- LeetCode 75 → Sort Colors
 
 ---
 
 ### Advanced Level
 
-- Longest Substring Without Repeating Characters
-- Minimum Window Substring
-- Container With Most Water
-- Trapping Rain Water
-- 3Sum
-- 4Sum
+- LeetCode 3 → Longest Substring Without Repeating Characters
+- LeetCode 76 → Minimum Window Substring
+- LeetCode 11 → Container With Most Water
+- LeetCode 42 → Trapping Rain Water
+- LeetCode 15 → 3Sum
+- LeetCode 18 → 4Sum
 
 ---
 
