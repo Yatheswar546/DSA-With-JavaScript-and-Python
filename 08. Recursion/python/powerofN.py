@@ -15,3 +15,6 @@ base = int(input("Enter base value: "))
 exponent = int(input("Enter exponent value: "))
 
 print(powerofN(base, exponent))
+
+# Time Complexity  : O(n)
+# Space Complexity : O(n)
